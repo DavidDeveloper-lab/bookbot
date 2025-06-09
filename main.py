@@ -1,4 +1,4 @@
-from stats import count_words
+from stats import count_words, number_of_characters
 relative_path = "books/frankenstein.txt"
 
 
@@ -13,4 +13,5 @@ def main():
 
 
 ###main()
-count_words(get_book_text(relative_path))
+
+calculate_characters = number_of_characters(count_words(get_book_text(relative_path)))
