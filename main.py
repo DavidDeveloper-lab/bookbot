@@ -1,4 +1,4 @@
-from stats import count_words, number_of_characters, sorted_list_dictionary
+from stats import *
 relative_path = "books/frankenstein.txt"
 
 
@@ -13,6 +13,10 @@ def main():
 
 
 ###main()
-
+print("============ BOOKBOT ============")
+print("Analyzing book found at books/frankenstein.txt...")
+print("----------- Word Count ----------")
 calculate_characters = number_of_characters(count_words(get_book_text(relative_path)))
+print("--------- Character Count -------")
 sorted_list_dictionary(calculate_characters)
+print("============= END ===============")
