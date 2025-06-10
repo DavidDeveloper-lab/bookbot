@@ -1,4 +1,4 @@
-from stats import count_words, number_of_characters
+from stats import count_words, number_of_characters, sorted_list_dictionary
 relative_path = "books/frankenstein.txt"
 
 
@@ -15,3 +15,4 @@ def main():
 ###main()
 
 calculate_characters = number_of_characters(count_words(get_book_text(relative_path)))
+sorted_list_dictionary(calculate_characters)
