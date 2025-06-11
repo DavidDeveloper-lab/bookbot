@@ -1,18 +1,21 @@
 from stats import *
-relative_path = "books/frankenstein.txt"
+import sys
+
+if len(sys.argv) <= 1:
+    print("Usage: python3 main.py <path_to_book>")
+    sys.exit(1)
+
+
+relative_path = sys.argv[1]
 
 
 def get_book_text(filepath):
     with open(filepath) as f:
         file_contest = f.read()
         return file_contest
-"""
-def main():
-    print(get_book_text(relative_path))
-"""
 
 
-###main()
+
 print("============ BOOKBOT ============")
 print("Analyzing book found at books/frankenstein.txt...")
 print("----------- Word Count ----------")
